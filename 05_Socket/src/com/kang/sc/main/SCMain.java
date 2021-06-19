@@ -20,11 +20,11 @@ public class SCMain {
 			System.out.println("Connected");
 
 			InputStream is = s.getInputStream();
-			InputStreamReader isr = new InputStreamReader(is);
+			InputStreamReader isr = new InputStreamReader(is, "utf-8");
 			BufferedReader br = new BufferedReader(isr);
 
 			OutputStream os = s.getOutputStream();
-			OutputStreamWriter osw = new OutputStreamWriter(os);
+			OutputStreamWriter osw = new OutputStreamWriter(os, "utf-8");
 			BufferedWriter bw = new BufferedWriter(osw);
 
 			Scanner k = new Scanner(System.in);

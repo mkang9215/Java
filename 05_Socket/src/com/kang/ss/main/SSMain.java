@@ -1,6 +1,4 @@
 package com.kang.ss.main;
-// Server
-
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.IOException;
@@ -15,6 +13,7 @@ import java.util.Scanner;
 import javax.swing.JFrame;
 import javax.swing.JTextArea;
 
+// Server
 public class SSMain {
 	public static void main(String[] args) {
 		try {
@@ -24,11 +23,11 @@ public class SSMain {
 			System.out.println("Client connected");
 
 			InputStream is = s.getInputStream();
-			InputStreamReader isr = new InputStreamReader(is);
+			InputStreamReader isr = new InputStreamReader(is, "utf-8");
 			BufferedReader br = new BufferedReader(isr);
 
 			OutputStream os = s.getOutputStream();
-			OutputStreamWriter osw = new OutputStreamWriter(os);
+			OutputStreamWriter osw = new OutputStreamWriter(os, "utf-8");
 			BufferedWriter bw = new BufferedWriter(osw);
 
 			Scanner k = new Scanner(System.in);

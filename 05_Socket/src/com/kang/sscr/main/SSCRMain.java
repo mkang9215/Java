@@ -22,7 +22,7 @@ public class SSCRMain {
 				sockets.add(s); 
 
 				InputStream is = s.getInputStream();
-				InputStreamReader isr = new InputStreamReader(is);
+				InputStreamReader isr = new InputStreamReader(is, "utf-8");
 				BufferedReader br = new BufferedReader(isr);
 
 				new Thread() {
@@ -32,7 +32,7 @@ public class SSCRMain {
 
 							for (Socket socket : sockets) {
 								OutputStream os = socket.getOutputStream();
-								OutputStreamWriter osw = new OutputStreamWriter(os);
+								OutputStreamWriter osw = new OutputStreamWriter(os, "utf-8");
 								BufferedWriter bw = new BufferedWriter(osw);
 
 								bw.write(msg + "\r\n");
