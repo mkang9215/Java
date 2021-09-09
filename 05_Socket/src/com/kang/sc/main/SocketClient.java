@@ -12,8 +12,7 @@ import java.util.Scanner;
 import javax.swing.JFrame;
 import javax.swing.JTextArea;
 
-// Client
-public class SCMain {
+public class SocketClient {
 	public static void main(String[] args) {
 		try {
 			Socket s = new Socket("192.168.0.81", 6548);

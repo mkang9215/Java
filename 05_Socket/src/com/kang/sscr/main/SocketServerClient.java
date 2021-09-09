@@ -11,7 +11,7 @@ import java.net.ServerSocket;
 import java.net.Socket;
 import java.util.ArrayList;
 
-public class SSCRMain {
+public class SocketServerClient {
 	public static void main(String[] args) {
 		try {
 			ServerSocket ss = new ServerSocket(2713);

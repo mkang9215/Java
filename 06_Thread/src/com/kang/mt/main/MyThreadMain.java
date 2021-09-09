@@ -3,11 +3,11 @@ package com.kang.mt.main;
 import javax.swing.JFrame;
 import javax.swing.JTextArea;
 
-public class MTMain {
+public class MyThreadMain {
 	public static void main(String[] args) {
 
 		// MyThread (extends Thread)
-		MyThread mt = new MyThread();
+		MyThread1 mt = new MyThread1();
 		mt.start(); 
 
 		// MyThread2 (implements Runnable)

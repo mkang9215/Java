@@ -14,7 +14,7 @@ import javax.swing.JFrame;
 import javax.swing.JTextArea;
 
 // Server
-public class SSMain {
+public class SocketServer {
 	public static void main(String[] args) {
 		try {
 			ServerSocket ss = new ServerSocket(2713);

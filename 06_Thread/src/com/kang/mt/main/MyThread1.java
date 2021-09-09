@@ -3,7 +3,7 @@ package com.kang.mt.main;
 import javax.swing.JFrame;
 import javax.swing.JTextArea;
 
-public class MyThread extends Thread {
+public class MyThread1 extends Thread {
 	@Override
 	public void run() {
 		super.run();
